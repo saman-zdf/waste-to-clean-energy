@@ -246,7 +246,7 @@ label #cancel {
 .video-info h2 {
   text-align: center;
   padding: 40px 10px 30px;
-  line-height: 15px;
+  line-height: 2rem;
   color: rgb(34, 139, 34);
 }
 
