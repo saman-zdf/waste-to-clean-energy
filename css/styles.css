@@ -107,7 +107,7 @@ nav ul li a {
   font-size: 18px;
   padding: 5px 0;
   text-transform: uppercase;
-  font-family: var(--ff-primary-3);
+  font-family: var(--ff-primary);
 }
 nav ul li a:before {
   position: absolute;
@@ -116,7 +116,7 @@ nav ul li a:before {
   bottom: 0;
   height: 3px;
   width: 100%;
-  background: white;
+  background: rgb(88, 182, 223);
   transform: scaleX(0);
   transform-origin: right;
   transition: var(--transition);
@@ -134,6 +134,10 @@ label #cancel {
   margin-right: 40px;
   cursor: pointer;
   display: none;
+  transition: var(--transition);
+}
+label #cancel:hover {
+  color: rgb(233, 125, 125);
 }
 #check {
   display: none;
@@ -325,67 +329,6 @@ label #cancel {
 
   .img-info-2 h2 {
     font-size: 2.5rem;
-  }
-}
-
-/*
-=========
- footer
-=========
- */
-footer {
-  background: navy;
-  padding: 10px 0;
-  margin-top: auto;
-}
-.footer-container {
-  max-width: 1300px;
-  margin: auto;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer-logo {
-  width: 150px;
-}
-.social-media {
-  margin: 20px 0;
-  text-align: center;
-}
-.social-icon {
-  color: whitesmoke;
-  margin-right: 20px;
-  font-size: 25px;
-  transition: var(--transition);
-}
-.social-icon:hover {
-  color: rgb(101, 162, 236);
-}
-
-.right-col {
-  font-size: 20px;
-}
-.rights-text {
-  color: #fff;
-  padding-bottom: 10px;
-  text-align: center;
-  border-bottom: 3px solid #fff;
-}
-
-@media screen and (max-width: 960px) {
-  .footer-container {
-    max-width: 600px;
-  }
-
-  .right-col {
-    width: 100%;
-    margin-bottom: 60px;
-  }
-  .left-col {
-    width: 100%;
-    text-align: center;
   }
 }
 
@@ -654,6 +597,71 @@ about
 .tech-lists-2 li {
   padding-bottom: 1rem;
 }
+.tech-lists-2 li a {
+  max-width: 15rem;
+  color: rgb(86, 134, 216);
+}
 .tech-lists span {
   text-decoration: underline;
+}
+
+/*
+=========
+ footer
+=========
+ */
+footer {
+  background: #222;
+  padding: 10px 0;
+  margin-top: auto;
+}
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  width: 150px;
+}
+.social-media {
+  margin: 20px 0;
+  text-align: center;
+}
+.social-icon {
+  color: whitesmoke;
+  margin-right: 20px;
+  font-size: 25px;
+  transition: var(--transition);
+}
+.social-icon:hover {
+  color: rgb(101, 162, 236);
+}
+
+.right-col {
+  font-size: 20px;
+}
+.rights-text {
+  color: #fff;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+}
+
+@media screen and (max-width: 960px) {
+  .footer-container {
+    max-width: 600px;
+  }
+
+  .right-col {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  .left-col {
+    width: 100%;
+    text-align: center;
+  }
 }
