@@ -251,6 +251,7 @@ label #cancel:hover {
   text-align: center;
   padding: 40px 10px 30px;
   line-height: 2rem;
+  margin-top: 5rem;
   color: rgb(34, 139, 34);
 }
 
