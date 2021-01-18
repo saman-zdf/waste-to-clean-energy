@@ -628,20 +628,6 @@ footer {
 .footer-logo {
   width: 150px;
 }
-.social-media {
-  margin: 20px 0;
-  text-align: center;
-}
-.social-icon {
-  color: whitesmoke;
-  margin-right: 20px;
-  font-size: 25px;
-  transition: var(--transition);
-}
-.social-icon:hover {
-  color: rgb(101, 162, 236);
-}
-
 .right-col {
   font-size: 20px;
 }
@@ -649,18 +635,21 @@ footer {
   color: #fff;
   padding-bottom: 10px;
   text-align: center;
+  margin: 0 auto;
   border-bottom: 3px solid #fff;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 992px) {
   .footer-container {
-    max-width: 600px;
+    max-width: 1170px;
   }
 
   .right-col {
     width: 100%;
     margin-bottom: 60px;
+    float: right;
   }
+
   .left-col {
     width: 100%;
     text-align: center;
